@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Account Of Money</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <section class="container bg-white mt-2 mb-5 mx-auto">
+        <div>
+            <h1 class='text-center main-heading p-4'>Monthly Account Of Money</h1>
+            <div class="row p-4 text-center">
+                <!--left image part-->
+
+                <div class="col-lg-6 col-12 mt-2 ">
+                    <img src='image/money.png' class='img-fluid money'>
+                </div>
+                <!--right card part-->
+                <div class="col-lg-6 col-12 mt-2">
+                    <div class='bg-light'>
+                      <div class='p-4 text-center'>
+                        <h5>Income</h5>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2"><span class='fs-5'>Income:</span></label>
+                            <div class="col-sm-10">
+                              <input type="" class="me-4 text-white bg-secondary bg-gradient border-0 py-2 px-2" id="input-income">
+                            </div>
+                          </div>      
+                      </div>
+
+                      <div class='px-4'>
+                        <h5>Expenses</h5>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2"><span class='ps-3 fs-5'>Food:</span></label>
+                            <div class="col-sm-10">
+                              <input type="" class="me-4  text-white border-0 bg-secondary bg-gradient py-2 px-2" id="input-food-price">
+                            </div>
+                        </div>      
+                        <div class="mb-3 row">
+                            <label class="col-sm-2"><span class='ps-3 fs-5'>Rent:</span></label>
+                            <div class="col-sm-10">
+                              <input type="" class="me-4 text-white border-0 bg-secondary bg-gradient py-2 px-2" id="input-rent-price">
+                            </div>
+                        </div>   
+                        <div class="mb-3 row">
+                            <label class="col-sm-2"><span class='fs-5'>Clothes:</span></label>
+                            <div class="col-sm-10">
+                              <input type=""class="me-4 text-white border-0 bg-secondary bg-gradient py-2 px-2" id="input-clothes-price">
+                            </div>
+                        </div>     
+
+                       </div>
+                      <!--calculate part-->
+                       <div class='text-center py-3'>
+                          <button id='calculate-btn' class='px-4 p-1 bg-danger text-white border-0'>Calculate</button>
+                          <div class='mt-2'>
+                            <h5>Total Expenses:<span id='total-expenses'>0</span></h5>
+                            <h5>Balance:<span id='display-balance'>0</span></h5>
+                          </div>
+                       </div>
+                    <!--saving money-->
+                     <div class='pb-4'>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2"><span class='ms-4 fs-5 mt-2'>Save:</span></label>
+                            <div class="col-sm-10">
+                              <button class="px-4 py-1 text-white border-0 bg-secondary bg-gradient" id="save-parcent"><span class='mt-2'>20</span></button><span class='px-4 mt-2'>%</span><button id='saving-btn' class='bg-danger px-5 p-1 text-white border-0 mt-2'>Save</button>
+                            </div>
+                        </div> 
+                       
+                        <h5>Saving Amount: <span>0</span></h5> 
+                        <h5 class="">Remaining Balance:<span>0</span></h5>
+                       
+                     </div>
+                     </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+<script src='money.js'></script>    
+</body>
+</html>
