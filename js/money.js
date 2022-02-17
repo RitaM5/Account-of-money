@@ -13,7 +13,7 @@ function inputCalculation(){
 }
 
 function mainCalculation(){
-    //error handle for inputField
+    
     inputIncome = inputCalculation();
     let foodInputValue = document.getElementById('input-food-price') ;
     let foodValue = parseInt(foodInputValue.value);
@@ -21,12 +21,15 @@ function mainCalculation(){
     let rentValue = parseInt(rentInputValue.value);
     let clothesInputValue = document.getElementById('input-clothes-price');
     let clothesValue = parseInt(clothesInputValue.value);
-
-  if(inputIncome ==String|| rentValue==String|| foodValue==String||clothesValue==String){
-    return alert("Please write a number");
-  }    
+//error handle for inputField
+  if(isNaN(inputIncome)==true|| isNaN(rentValue)==true|| isNaN(foodValue)==true||isNaN(clothesValue)==true){
+    return alert("Please write a number !!");
+  } 
+  else if(inputIncome<0||foodValue<0||rentValue<0||clothesValue<0){
+      return alert('Please write a positive number !!');
+  }   
   //total expenses
-   else{
+   else if(){
        let totalExpenses = foodValue + rentValue + clothesValue ;
        document.getElementById('total-expenses').innerText = totalExpenses;
 
