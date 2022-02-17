@@ -55,7 +55,7 @@ function savingMoney(){
     let totalSavingAmount =(inputIncome / 100) * savingAmount;
     return totalSavingAmount;
 }
-
+//for save btn
 document.getElementById('saving-btn').addEventListener('click', function(){
  
     balance = mainCalculation();
@@ -65,7 +65,7 @@ document.getElementById('saving-btn').addEventListener('click', function(){
        return alert('you dont have sufficient balance !!');
     }
     else {
-        document.getElementById('saving-amount').innerText = totalSavingAmount;
+       document.getElementById('saving-amount').innerText = totalSavingAmount;
     }
     document.getElementById('remaining-balance').innerText = balance - totalSavingAmount ;
 })
